@@ -1,9 +1,9 @@
-using System;
-
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        var fraction = new Fractions.Fraction(3, 2);
+        Console.WriteLine(fraction); // Output: 3/1
+        Console.WriteLine(fraction.DecimalValue()); // Output: 3.0
     }
 }
