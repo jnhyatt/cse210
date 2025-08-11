@@ -1,6 +1,6 @@
 namespace OnlineOrdering;
 
-public record Customer(string Name, Address Address)
+public record class Customer(string Name, Address Address)
 {
     public bool IsInternational => Address.IsInternational;
 }

@@ -1,8 +1,8 @@
 namespace OnlineOrdering;
 
-public record Order(Customer Customer, List<Order.ProductEntry> Items)
+public record class Order(Customer Customer, List<Order.ProductEntry> Items)
 {
-    public record ProductEntry(Product Product, int Quantity)
+    public record class ProductEntry(Product Product, int Quantity)
     {
         public decimal TotalPrice => Product.Price * Quantity;
     }

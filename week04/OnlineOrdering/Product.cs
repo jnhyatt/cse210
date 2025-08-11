@@ -1,3 +1,3 @@
 namespace OnlineOrdering;
 
-public record Product(string Name, int Id, decimal Price) { }
+public record class Product(string Name, int Id, decimal Price) { }
